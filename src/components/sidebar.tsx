@@ -1,6 +1,7 @@
 'use client'
 
-import { IconExternalLink, ScrollArea } from '@tszhong0411/ui'
+import { IconExternalLink } from '@tabler/icons-react'
+import { ScrollArea } from '@tszhong0411/ui'
 import { cx } from '@tszhong0411/utils'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'

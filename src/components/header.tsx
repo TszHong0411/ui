@@ -1,6 +1,7 @@
 'use client'
 
-import { Button, IconBrandGithub, IconMenu, Logo } from '@tszhong0411/ui'
+import { IconBrandGithub, IconMenu } from '@tabler/icons-react'
+import { Button, Logo } from '@tszhong0411/ui'
 import Link from 'next/link'
 import React from 'react'
 import { useLockBodyScroll, useToggle } from 'react-use'

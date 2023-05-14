@@ -1,4 +1,3 @@
-import { ThemeProvider } from '@tszhong0411/ui'
 import { Analytics } from '@vercel/analytics/react'
 import clsx from 'clsx'
 import type { Metadata } from 'next'
@@ -7,6 +6,8 @@ import '@/styles/globals.css'
 
 import Footer from '@/components/footer'
 import Header from '@/components/header'
+import Providers from '@/components/providers'
+import Toaster from '@/components/toaster'
 
 import { site } from '@/config/site'
 
@@ -103,15 +104,12 @@ const RootLayout = (props: RootLayoutProps) => {
       )}
     >
       <body>
-        <ThemeProvider
-          attribute='class'
-          defaultTheme='dark'
-          disableTransitionOnChange
-        >
+        <Providers>
           <Header />
           {children}
           <Footer />
-        </ThemeProvider>
+          <Toaster />
+        </Providers>
         <Analytics />
       </body>
     </html>

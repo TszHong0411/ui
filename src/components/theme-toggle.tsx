@@ -1,7 +1,8 @@
 'use client'
 
-import { Button, IconMoon, IconSun } from '@tszhong0411/ui'
-import { useTheme } from '@tszhong0411/ui'
+import { IconMoon, IconSun } from '@tabler/icons-react'
+import { Button } from '@tszhong0411/ui'
+import { useTheme } from 'next-themes'
 import React from 'react'
 
 const ThemeToggle = () => {

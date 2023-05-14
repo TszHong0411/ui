@@ -1,4 +1,12 @@
 import {
+  IconCalculator,
+  IconCalendar,
+  IconCreditCard,
+  IconMoodSmile,
+  IconSettings,
+  IconUser,
+} from '@tabler/icons-react'
+import {
   Command,
   CommandEmpty,
   CommandGroup,
@@ -7,12 +15,6 @@ import {
   CommandList,
   CommandSeparator,
   CommandShortcut,
-  IconCalculator,
-  IconCalendar,
-  IconCreditCard,
-  IconMoodSmile,
-  IconSettings,
-  IconUser,
 } from '@tszhong0411/ui'
 
 const CommandDemo = () => {

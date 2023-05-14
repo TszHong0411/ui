@@ -1,4 +1,5 @@
-import { Button, IconArrowBarUp } from '@tszhong0411/ui'
+import { IconArrowBarUp } from '@tabler/icons-react'
+import { Button } from '@tszhong0411/ui'
 
 const ButtonWithIcon = () => {
   return (

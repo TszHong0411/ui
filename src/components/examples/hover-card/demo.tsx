@@ -1,3 +1,4 @@
+import { IconCalendar } from '@tabler/icons-react'
 import {
   Avatar,
   AvatarFallback,
@@ -5,7 +6,6 @@ import {
   HoverCard,
   HoverCardContent,
   HoverCardTrigger,
-  IconCalendar,
 } from '@tszhong0411/ui'
 
 const HoverCardDemo = () => {

@@ -1,6 +1,6 @@
+import { IconAdjustmentsHorizontal } from '@tabler/icons-react'
 import {
   Button,
-  IconAdjustmentsHorizontal,
   Input,
   Label,
   Popover,

@@ -1,5 +1,6 @@
 'use client'
 
+import { IconCircle, IconFile, IconMoon, IconSun } from '@tabler/icons-react'
 import {
   Button,
   CommandDialog,
@@ -9,14 +10,10 @@ import {
   CommandItem,
   CommandList,
   CommandSeparator,
-  IconCircle,
-  IconFile,
-  IconMoon,
-  IconSun,
   Kbd,
-  useTheme,
 } from '@tszhong0411/ui'
 import { useRouter } from 'next/navigation'
+import { useTheme } from 'next-themes'
 import React from 'react'
 
 import { docs } from '@/config/docs'
@@ -107,4 +104,5 @@ const CommandMenu = () => {
     </>
   )
 }
+
 export default CommandMenu

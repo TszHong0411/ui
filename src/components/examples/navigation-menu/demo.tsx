@@ -1,5 +1,5 @@
+import { IconBrandRadixUi } from '@tabler/icons-react'
 import {
-  IconBrandRadixUi,
   NavigationMenu,
   NavigationMenuContent,
   NavigationMenuIndicator,

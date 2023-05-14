@@ -1,9 +1,9 @@
+import { IconSelector } from '@tabler/icons-react'
 import {
   Button,
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
-  IconSelector,
 } from '@tszhong0411/ui'
 import React from 'react'
 

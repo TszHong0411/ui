@@ -1,6 +1,6 @@
+import { IconPlus } from '@tabler/icons-react'
 import {
   Button,
-  IconPlus,
   Tooltip,
   TooltipContent,
   TooltipProvider,

@@ -161,26 +161,5 @@ export const docs: Docs = {
         },
       ],
     },
-    {
-      title: 'Libraries',
-      items: [
-        {
-          title: 'Next Themes',
-          href: 'https://github.com/pacocoursey/next-themes',
-        },
-        {
-          title: 'Framer Motion',
-          href: 'https://www.framer.com/motion/introduction/',
-        },
-        {
-          title: 'Tabler Icons',
-          href: 'https://tabler-icons.io/',
-        },
-        {
-          title: 'React Hot Toast',
-          href: 'https://react-hot-toast.com/',
-        },
-      ],
-    },
   ],
 }

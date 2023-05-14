@@ -1,9 +1,9 @@
 'use client'
 
 import { IconCheck, IconCopy } from '@tabler/icons-react'
-import { toast } from '@tszhong0411/ui'
 import { cx } from '@tszhong0411/utils'
 import React from 'react'
+import { toast } from 'react-hot-toast'
 
 type PreProps = JSX.IntrinsicElements['pre']
 

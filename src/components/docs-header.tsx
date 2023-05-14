@@ -5,9 +5,9 @@ import {
   IconBrandRadixUi,
   IconChevronRight,
   IconPencil,
-  motion,
-} from '@tszhong0411/ui'
+} from '@tabler/icons-react'
 import { cx } from '@tszhong0411/utils'
+import { motion } from 'framer-motion'
 
 type DocsHeaderProps = {
   title: string
