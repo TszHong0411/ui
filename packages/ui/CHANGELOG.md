@@ -1,5 +1,11 @@
 # @tszhong0411/ui
 
+## 1.0.2
+
+### Patch Changes
+
+- 53f4d7e: remove other libraries
+
 ## 1.0.1
 
 ### Patch Changes
