@@ -1,0 +1,60 @@
+---
+title: Tooltip
+description: A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.
+source: https://github.com/tszhong0411/ui/blob/main/packages/ui/src/tooltip.tsx
+docs: https://github.com/tszhong0411/ui/blob/main/src/contents/docs/components/tooltip.mdx
+api: https://www.radix-ui.com/docs/primitives/components/tooltip#api-reference
+---
+
+<ComponentExample component={<TooltipDemo />}>
+  ```tsx
+  import {
+    Button,
+    IconPlus,
+    Tooltip,
+    TooltipContent,
+    TooltipProvider,
+    TooltipTrigger,
+  } from '@tszhong0411/ui'
+
+  const TooltipDemo = () => {
+    return (
+      <TooltipProvider>
+        <Tooltip>
+          <TooltipTrigger asChild>
+            <Button className='h-9 w-9 rounded-full p-0'>
+              <IconPlus size={16} />
+            </Button>
+          </TooltipTrigger>
+          <TooltipContent>
+            <p>Add to library</p>
+          </TooltipContent>
+        </Tooltip>
+      </TooltipProvider>
+    )
+  }
+  export default TooltipDemo
+  ```
+</ComponentExample>
+
+## Usage
+
+```tsx
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from '@tszhong0411/ui'
+```
+
+```tsx
+<TooltipProvider>
+  <Tooltip>
+    <TooltipTrigger>Hover</TooltipTrigger>
+    <TooltipContent>
+      <p>Add to library</p>
+    </TooltipContent>
+  </Tooltip>
+</TooltipProvider>
+```

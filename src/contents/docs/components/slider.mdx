@@ -1,0 +1,29 @@
+---
+title: Slider
+description: An input where the user selects a value from within a given range.
+source: https://github.com/tszhong0411/ui/blob/main/packages/ui/src/slider.tsx
+docs: https://github.com/tszhong0411/ui/blob/main/src/contents/docs/components/slider.mdx
+api: https://www.radix-ui.com/docs/primitives/components/slider#api-reference
+---
+
+<ComponentExample component={<SliderDemo />}>
+  ```tsx
+  import { Slider } from '@tszhong0411/ui'
+
+  const SliderDemo = () => {
+    return <Slider defaultValue={[50]} max={100} step={1} className='w-[60%]' />
+  }
+
+  export default SliderDemo
+  ```
+</ComponentExample>
+
+## Usage
+
+```tsx
+import { Slider } from '@tszhong0411/ui'
+```
+
+```tsx
+<Slider defaultValue={[50]} max={100} step={1} />
+```

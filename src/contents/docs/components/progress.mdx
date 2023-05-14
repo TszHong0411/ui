@@ -1,0 +1,37 @@
+---
+title: Progress
+description: Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.
+source: https://github.com/tszhong0411/ui/blob/main/packages/ui/src/progress.tsx
+docs: https://github.com/tszhong0411/ui/blob/main/src/contents/docs/components/progress.mdx
+api: https://www.radix-ui.com/docs/primitives/components/progress#api-reference
+---
+
+<ComponentExample component={<ProgressDemo />}>
+  ```tsx
+  import { Progress } from '@tszhong0411/ui'
+  import React from 'react'
+
+  const ProgressDemo = () => {
+    const [progress, setProgress] = React.useState(0)
+
+    React.useEffect(() => {
+      const timer = setTimeout(() => setProgress(66), 500)
+      return () => clearTimeout(timer)
+    }, [])
+
+    return <Progress value={progress} className='w-[60%]' />
+  }
+
+  export default ProgressDemo
+  ```
+</ComponentExample>
+
+## Usage
+
+```tsx
+import { Progress } from '@tszhong0411/ui'
+```
+
+```tsx
+<Progress value={66} />
+```

@@ -1,0 +1,92 @@
+---
+title: Checkbox
+description: A control that allows the user to toggle between checked and not checked.
+source: https://github.com/tszhong0411/ui/blob/main/packages/ui/src/checkbox.tsx
+docs: https://github.com/tszhong0411/ui/blob/main/src/contents/docs/components/checkbox.mdx
+api: https://www.radix-ui.com/docs/primitives/components/checkbox#api-reference
+---
+
+<ComponentExample component={<CheckboxDemo />}>
+  ```tsx
+  import { Checkbox, Label } from '@tszhong0411/ui'
+
+  const CheckboxDemo = () => {
+    return (
+      <div className='flex items-center gap-2'>
+        <Checkbox id='checkbox-1' />
+        <Label htmlFor='checkbox-1'>Checkbox 1</Label>
+      </div>
+    )
+  }
+
+  export default CheckboxDemo
+  ```
+</ComponentExample>
+
+## Usage
+
+```tsx
+import { Checkbox } from '@tszhong0411/ui'
+```
+
+```tsx
+<Checkbox />
+```
+
+## Examples
+
+### Checked
+
+<ComponentExample component={<CheckboxChecked />}>
+  ```tsx
+  import { Checkbox, Label } from '@tszhong0411/ui'
+
+  const CheckboxChecked = () => {
+    return (
+      <div className='flex items-center gap-2'>
+        <Checkbox id='checkbox-2' defaultChecked />
+        <Label htmlFor='checkbox-2'>Checkbox 2</Label>
+      </div>
+    )
+  }
+  export default CheckboxChecked
+  ```
+</ComponentExample>
+
+### Disabled
+
+<ComponentExample component={<CheckboxDisabled />}>
+  ```tsx
+  import { Checkbox, Label } from '@tszhong0411/ui'
+
+  const CheckboxDisabled = () => {
+    return (
+      <div className='flex items-center gap-2'>
+        <Checkbox id='checkbox-3' disabled />
+        <Label htmlFor='checkbox-3'>Checkbox 3</Label>
+      </div>
+    )
+  }
+
+  export default CheckboxDisabled
+  ```
+</ComponentExample>
+
+### Disabed Checked
+
+<ComponentExample component={<CheckboxDisabledChecked />}>
+  ```tsx
+  import { Checkbox, Label } from '@tszhong0411/ui'
+
+  const CheckboxDisabledChecked = () => {
+    return (
+      <div className='flex items-center gap-2'>
+        <Checkbox id='checkbox-4' disabled checked />
+        <Label htmlFor='checkbox-4'>Checkbox 4</Label>
+      </div>
+    )
+  }
+
+  export default CheckboxDisabledChecked
+  ```
+</ComponentExample>

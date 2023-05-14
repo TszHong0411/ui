@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "lib": ["es2015"]
+  },
+  "exclude": ["dist", "build", "node_modules"],
+  "extends": "@tszhong0411/tsconfig",
+  "include": ["src"]
+}

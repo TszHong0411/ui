@@ -1,0 +1,63 @@
+---
+title: Textarea
+description: For multi-line text input.
+source: https://github.com/tszhong0411/ui/blob/main/packages/ui/src/textarea.tsx
+docs: https://github.com/tszhong0411/ui/blob/main/src/contents/docs/components/textarea.mdx
+---
+
+<ComponentExample component={<TextareaDemo />}>
+  ```tsx
+  import { Textarea } from '@tszhong0411/ui'
+
+  const TextareaDemo = () => {
+    return <Textarea placeholder='Type your message here.' />
+  }
+
+  export default TextareaDemo
+  ```
+</ComponentExample>
+
+## Usage
+
+```tsx
+import { Textarea } from '@tszhong0411/ui'
+```
+
+```tsx
+<Textarea />
+```
+
+## Examples
+
+### Disabled
+
+<ComponentExample component={<TextareaDisabled />}>
+  ```tsx
+  import { Textarea } from '@tszhong0411/ui'
+
+  const TextareaDisabled = () => {
+    return <Textarea placeholder='Type your message here.' disabled />
+  }
+
+  export default TextareaDisabled
+  ```
+</ComponentExample>
+
+### With Label
+
+<ComponentExample component={<TextareaWithLabel />}>
+  ```tsx
+  import { Label, Textarea } from '@tszhong0411/ui'
+
+  const TextareaWithLabel = () => {
+    return (
+      <div className='flex w-full flex-col gap-1.5'>
+        <Label htmlFor='message'>Your message</Label>
+        <Textarea placeholder='Type your message here.' id='message' />
+      </div>
+    )
+  }
+
+  export default TextareaWithLabel
+  ```
+</ComponentExample>

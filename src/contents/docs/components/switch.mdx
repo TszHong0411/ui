@@ -1,0 +1,55 @@
+---
+title: Switch
+description: A control that allows the user to toggle between checked and not checked.
+source: https://github.com/tszhong0411/ui/blob/main/packages/ui/src/switch.tsx
+docs: https://github.com/tszhong0411/ui/blob/main/src/contents/docs/components/switch.mdx
+api: https://www.radix-ui.com/docs/primitives/components/switch#api-reference
+---
+
+<ComponentExample component={<SwitchDemo />}>
+  ```tsx
+  import { Label, Switch } from '@tszhong0411/ui'
+
+  const SwitchDemo = () => {
+    return (
+      <div className='flex items-center gap-2'>
+        <Switch id='airplane-mode' />
+        <Label htmlFor='airplane-mode'>Airplane Mode</Label>
+      </div>
+    )
+  }
+
+  export default SwitchDemo
+  ```
+</ComponentExample>
+
+## Usage
+
+```tsx
+import { Switch } from '@tszhong0411/ui'
+```
+
+```tsx
+<Switch />
+```
+
+## Examples
+
+### Disabled
+
+<ComponentExample component={<SwitchDisabled />}>
+  ```tsx
+  import { Label, Switch } from '@tszhong0411/ui'
+
+  const SwitchDisabled = () => {
+    return (
+      <div className='flex items-center gap-2'>
+        <Switch id='bluetooth' disabled />
+        <Label htmlFor='bluetooth'>Bluetooth</Label>
+      </div>
+    )
+  }
+
+  export default SwitchDisabled
+  ```
+</ComponentExample>

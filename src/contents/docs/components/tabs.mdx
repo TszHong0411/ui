@@ -1,0 +1,55 @@
+---
+title: Tabs
+description: A set of layered sections of content—known as tab panels—that are displayed one at a time.
+source: https://github.com/tszhong0411/ui/blob/main/packages/ui/src/tabs.tsx
+docs: https://github.com/tszhong0411/ui/blob/main/src/contents/docs/components/tabs.mdx
+api: https://www.radix-ui.com/docs/primitives/components/tabs#api-reference
+---
+
+<ComponentExample component={<TabsDemo />}>
+  ```tsx
+  import { Tabs, TabsContent, TabsList, TabsTrigger } from '@tszhong0411/ui'
+
+  const TabsDemo = () => {
+    return (
+      <Tabs defaultValue='apple' className='w-3/4'>
+        <TabsList>
+          <TabsTrigger value='apple'>Apple</TabsTrigger>
+          <TabsTrigger value='orange'>Orange</TabsTrigger>
+          <TabsTrigger value='mango'>Mango</TabsTrigger>
+        </TabsList>
+        <TabsContent value='apple' className='p-6'>
+          Apple
+        </TabsContent>
+        <TabsContent value='orange' className='p-6'>
+          Orange
+        </TabsContent>
+        <TabsContent value='mango' className='p-6'>
+          Mango
+        </TabsContent>
+      </Tabs>
+    )
+  }
+
+  export default TabsDemo
+  ```
+</ComponentExample>
+
+## Usage
+
+```tsx
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@tszhong0411/ui'
+```
+
+```tsx
+<Tabs defaultValue='apple'>
+  <TabsList>
+    <TabsTrigger value='apple'>Apple</TabsTrigger>
+    <TabsTrigger value='orange'>Orange</TabsTrigger>
+    <TabsTrigger value='mango'>Mango</TabsTrigger>
+  </TabsList>
+  <TabsContent value='apple'>Apple</TabsContent>
+  <TabsContent value='orange'>Orange</TabsContent>
+  <TabsContent value='mango'>Mango</TabsContent>
+</Tabs>
+```

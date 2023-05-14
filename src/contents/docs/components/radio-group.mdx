@@ -1,0 +1,80 @@
+---
+title: Radio Group
+description: A set of checkable buttons—known as radio buttons—where no more than one of the buttons can be checked at a time.
+source: https://github.com/tszhong0411/ui/blob/main/packages/ui/src/radio-group.tsx
+docs: https://github.com/tszhong0411/ui/blob/main/src/contents/docs/components/radio-group.mdx
+api: https://www.radix-ui.com/docs/primitives/components/radio-group#api-reference
+---
+
+<ComponentExample component={<RadioGroupDemo />}>
+  ```tsx
+  import { Label, RadioGroup, RadioGroupItem } from '@tszhong0411/ui'
+
+  const RadioGroupDemo = () => {
+    return (
+      <RadioGroup defaultValue='comfortable' className='flex flex-col gap-2.5'>
+        <div className='flex items-center gap-2'>
+          <RadioGroupItem value='default' id='r1' />
+          <Label htmlFor='r1'>Default</Label>
+        </div>
+        <div className='flex items-center gap-2'>
+          <RadioGroupItem value='comfortable' id='r2' />
+          <Label htmlFor='r2'>Comfortable</Label>
+        </div>
+        <div className='flex items-center gap-2'>
+          <RadioGroupItem value='compact' id='r3' />
+          <Label htmlFor='r3'>Compact</Label>
+        </div>
+      </RadioGroup>
+    )
+  }
+
+  export default RadioGroupDemo
+  ```
+</ComponentExample>
+
+## Usage
+
+```tsx
+import { Label, RadioGroup, RadioGroupItem } from '@tszhong0411/ui'
+```
+
+```tsx
+<RadioGroup defaultValue='option-1'>
+  <div className='flex items-center gap-2'>
+    <RadioGroupItem value='option-1' id='option-1' />
+    <Label htmlFor='option-1'>Option 1</Label>
+  </div>
+  <div className='flex items-center gap-2'>
+    <RadioGroupItem value='option-2' id='option-2' />
+    <Label htmlFor='option-2'>Option 2</Label>
+  </div>
+</RadioGroup>
+```
+
+## Examples
+
+### Disabled
+
+<ComponentExample component={<RadioGroupDisabled />}>
+  ```tsx
+  import { Label, RadioGroup, RadioGroupItem } from '@tszhong0411/ui'
+
+  const RadioGroupDisabled = () => {
+    return (
+      <RadioGroup defaultValue='option-1' className='flex flex-col gap-2.5'>
+        <div className='flex items-center gap-2'>
+          <RadioGroupItem value='option-1' id='option-1' />
+          <Label htmlFor='option-1'>Option 1</Label>
+        </div>
+        <div className='flex items-center gap-2'>
+          <RadioGroupItem value='option-2' id='option-2' disabled />
+          <Label htmlFor='option-2'>Option 2</Label>
+        </div>
+      </RadioGroup>
+    )
+  }
+
+  export default RadioGroupDisabled
+  ```
+</ComponentExample>

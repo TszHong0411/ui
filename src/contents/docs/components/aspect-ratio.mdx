@@ -1,0 +1,90 @@
+---
+title: Aspect Ratio
+description: Displays content within a desired ratio.
+source: https://github.com/tszhong0411/ui/blob/main/packages/ui/src/aspect-ratio.tsx
+docs: https://github.com/tszhong0411/ui/blob/main/src/contents/docs/components/aspect-ratio.mdx
+api: https://www.radix-ui.com/docs/primitives/components/aspect-ratio#api-reference
+---
+
+<ComponentExample component={<AspectRatioDemo />}>
+  ```tsx
+  import { AspectRatio } from '@tszhong0411/ui'
+  import Image from 'next/image'
+
+  const AspectRatioDemo = () => {
+    return (
+      <AspectRatio ratio={16 / 9}>
+        <Image
+          src='https://images.unsplash.com/photo-1536599018102-9f803c140fc1?w=1920&q=100'
+          alt='Photo by Simon Zhu'
+          fill
+          className='rounded-md object-cover'
+        />
+      </AspectRatio>
+    )
+  }
+
+  export default AspectRatioDemo
+  ```
+</ComponentExample>
+
+## Usage
+
+```tsx
+import { AspectRatio } from '@tszhong0411/ui'
+import Image from 'next/image'
+```
+
+```tsx
+<AspectRatio ratio={16 / 9}>
+  <Image src='...' alt='...' className='rounded-md object-cover' />
+</AspectRatio>
+```
+
+## Examples
+
+### Map
+
+<ComponentExample component={<AspectRatioMap />}>
+  ```tsx
+  import { AspectRatio } from '@tszhong0411/ui'
+
+  const AspectRatioMap = () => {
+    return (
+      <AspectRatio ratio={16 / 9}>
+        <iframe
+          src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d236161.11980830412!2d113.9628909831798!3d22.352968179881678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3403fefda2ea2807%3A0x486db43574f494da!2z6aaZ5riv!5e0!3m2!1sen-US!2shk!4v1683459071155!5m2!1sen-US!2shk'
+          title='Google map'
+          className='h-full w-full'
+        ></iframe>
+      </AspectRatio>
+    )
+  }
+
+  export default AspectRatioMap
+  ```
+</ComponentExample>
+
+### Video
+
+<ComponentExample component={<AspectRatioVideo />}>
+  ```tsx
+  import { AspectRatio } from '@tszhong0411/ui'
+
+  const AspectRatioVideo = () => {
+    return (
+      <AspectRatio ratio={16 / 9}>
+        <iframe
+          src='https://www.youtube.com/embed/gYO1uk7vIcc'
+          title='YouTube video player'
+          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+          className='h-full w-full'
+          allowFullScreen
+        />
+      </AspectRatio>
+    )
+  }
+
+  export default AspectRatioVideo
+  ```
+</ComponentExample>

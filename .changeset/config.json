@@ -1,0 +1,14 @@
+{
+  "$schema": "https://unpkg.com/@changesets/config@2.3.0/schema.json",
+  "access": "public",
+  "baseBranch": "main",
+  "changelog": [
+    "@changesets/cli/changelog",
+    {
+      "repo": "tszhong0411/ui"
+    }
+  ],
+  "commit": false,
+  "ignore": [],
+  "linked": []
+}

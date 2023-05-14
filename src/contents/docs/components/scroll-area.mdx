@@ -1,0 +1,49 @@
+---
+title: Scroll Area
+description: Augments native scroll functionality for custom, cross-browser styling.
+source: https://github.com/tszhong0411/ui/blob/main/packages/ui/src/scroll-area.tsx
+docs: https://github.com/tszhong0411/ui/blob/main/src/contents/docs/components/scroll-area.mdx
+api: https://www.radix-ui.com/docs/primitives/components/scroll-area#api-reference
+---
+
+<ComponentExample component={<ScrollAreaDemo />}>
+  ```tsx
+  import { ScrollArea, Separator } from '@tszhong0411/ui'
+  import React from 'react'
+
+  const TAGS = Array.from({ length: 50 }).map(
+    (_, i, a) => `v1.2.0-beta.${a.length - i}`
+  )
+
+  const ScrollAreaDemo = () => {
+    return (
+      <ScrollArea className='h-[350px] w-[200px] rounded-md border border-accent-2 p-4 pt-2'>
+        {TAGS.map((tag) => (
+          <React.Fragment key={tag}>
+            <div className='my-2 text-sm'>{tag}</div>
+            <Separator className='h-px' />
+          </React.Fragment>
+        ))}
+      </ScrollArea>
+    )
+  }
+
+  export default ScrollAreaDemo
+  ```
+</ComponentExample>
+
+## Usage
+
+```tsx
+import { ScrollArea } from '@tszhong0411/ui'
+```
+
+```tsx
+<ScrollArea className='h-[200px] w-[350px] rounded-md border border-accent-2 p-4'>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Error culpa ea illo,
+  repellat enim est neque deserunt labore itaque, facere eveniet, quas saepe?
+  Debitis ratione, molestias velit commodi et beatae adipisci eaque consectetur
+  facilis veritatis libero cupiditate a esse eligendi nisi earum veniam atque.
+  Dolorum minima accusantium nostrum placeat rem.
+</ScrollArea>
+```

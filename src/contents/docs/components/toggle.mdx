@@ -1,0 +1,91 @@
+---
+title: Toggle
+description: A two-state button that can be either on or off.
+source: https://github.com/tszhong0411/ui/blob/main/packages/ui/src/toggle.tsx
+docs: https://github.com/tszhong0411/ui/blob/main/src/contents/docs/components/toggle.mdx
+api: https://www.radix-ui.com/docs/primitives/components/toggle#api-reference
+---
+
+<ComponentExample component={<ToggleDemo />}>
+  ```tsx
+  import { IconBold, Toggle } from '@tszhong0411/ui'
+
+  const ToggleDemo = () => {
+    return (
+      <Toggle aria-label='Toggle italic'>
+        <IconBold size={16} />
+      </Toggle>
+    )
+  }
+
+  export default ToggleDemo
+  ```
+</ComponentExample>
+
+## Usage
+
+```tsx
+import { Toggle } from '@tszhong0411/ui'
+```
+
+```tsx
+<Toggle>Toggle</Toggle>
+```
+
+## Examples
+
+### Outline
+
+<ComponentExample component={<ToggleOutline />}>
+  ```tsx
+  import { IconBold, Toggle } from '@tszhong0411/ui'
+
+  const ToggleOutline = () => {
+    return (
+      <Toggle aria-label='Toggle italic' variant='outline'>
+        <IconBold size={16} />
+      </Toggle>
+    )
+  }
+
+  export default ToggleOutline
+  ```
+</ComponentExample>
+
+### With Text
+
+<ComponentExample component={<ToggleWithText />}>
+  ```tsx
+  import { IconBold, Toggle } from '@tszhong0411/ui'
+
+  const ToggleWithText = () => {
+    return (
+      <Toggle aria-label='Toggle italic'>
+        <IconBold size={16} className='mr-2' />
+        Bold
+      </Toggle>
+    )
+  }
+
+  export default ToggleWithText
+  ```
+</ComponentExample>
+
+
+### Disabled
+
+<ComponentExample component={<ToggleDisabled />}>
+  ```tsx
+  import { IconBold, Toggle } from '@tszhong0411/ui'
+
+  const ToggleDisabled = () => {
+    return (
+      <Toggle aria-label='Toggle italic' disabled>
+        <IconBold size={16} />
+      </Toggle>
+    )
+  }
+
+  export default ToggleDisabled
+  ```
+</ComponentExample>

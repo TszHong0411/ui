@@ -1,0 +1,63 @@
+---
+title: Input
+description: For text input.
+source: https://github.com/tszhong0411/ui/blob/main/packages/ui/src/input.tsx
+docs: https://github.com/tszhong0411/ui/blob/main/src/contents/docs/components/input.mdx
+---
+
+<ComponentExample component={<InputDemo />}>
+  ```tsx
+  import { Input } from '@tszhong0411/ui'
+
+  const InputDemo = () => {
+    return <Input type='text' placeholder='Search' />
+  }
+
+  export default InputDemo
+  ```
+</ComponentExample>
+
+## Usage
+
+```tsx
+import { Input } from '@tszhong0411/ui'
+```
+
+```tsx
+<Input />
+```
+
+## Examples
+
+### Disabled
+
+<ComponentExample component={<InputDisabled />}>
+  ```tsx
+  import { Input } from '@tszhong0411/ui'
+
+  const InputDisabled = () => {
+    return <Input type='text' placeholder='Search' disabled />
+  }
+
+  export default InputDisabled
+  ```
+</ComponentExample>
+
+### With Label
+
+<ComponentExample component={<InputWithLabel />}>
+  ```tsx
+  import { Input, Label } from '@tszhong0411/ui'
+
+  const InputWithLabel = () => {
+    return (
+      <div className='flex flex-col gap-1.5'>
+        <Label htmlFor='search'>Search</Label>
+        <Input type='text' id='search' placeholder='Search' />
+      </div>
+    )
+  }
+
+  export default InputWithLabel
+  ```
+</ComponentExample>

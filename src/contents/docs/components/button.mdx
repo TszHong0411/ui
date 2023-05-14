@@ -1,0 +1,122 @@
+---
+title: Button
+description: A clickable UI element with various styles and functionalities.
+source: https://github.com/tszhong0411/ui/blob/main/packages/ui/src/button.tsx
+docs: https://github.com/tszhong0411/ui/blob/main/src/contents/docs/components/button.mdx
+---
+
+<ComponentExample component={<ButtonDemo />}>
+  ```tsx
+  import { Button } from '@tszhong0411/ui'
+
+  const ButtonDemo = () => {
+    return <Button>Button</Button>
+  }
+
+  export default ButtonDemo
+  ```
+</ComponentExample>
+
+## Usage
+
+```tsx
+import { Button } from '@tszhong0411/ui'
+```
+
+```tsx
+<Button variant='default'>Button</Button>
+```
+
+## Examples
+
+### Outline
+
+<ComponentExample component={<ButtonOutline />}>
+  ```tsx
+  import { Button } from '@tszhong0411/ui'
+
+  const ButtonOutline = () => {
+    return <Button variant='outline'>Button</Button>
+  }
+
+  export default ButtonOutline
+  ```
+</ComponentExample>
+
+### Danger
+
+<ComponentExample component={<ButtonDanger />}>
+  ```tsx
+  import { Button } from '@tszhong0411/ui'
+
+  const ButtonDanger = () => {
+    return <Button variant='danger'>Button</Button>
+  }
+
+  export default ButtonDanger
+  ```
+</ComponentExample>
+
+### Ghost
+
+<ComponentExample component={<ButtonGhost />}>
+  ```tsx
+  import { Button } from '@tszhong0411/ui'
+
+  const ButtonGhost = () => {
+    return <Button variant='ghost'>Button</Button>
+  }
+
+  export default ButtonGhost
+  ```
+</ComponentExample>
+
+### Disabled
+
+<ComponentExample component={<ButtonDisabled />}>
+  ```tsx
+  import { Button } from '@tszhong0411/ui'
+
+  const ButtonDisabled = () => {
+    return <Button disabled>Button</Button>
+  }
+
+  export default ButtonDisabled
+  ```
+</ComponentExample>
+
+### Loading
+
+<ComponentExample component={<ButtonLoading />}>
+  ```tsx
+  import { Button } from '@tszhong0411/ui'
+
+  const ButtonLoading = () => {
+    return (
+      <Button loading disabled>
+        Loading
+      </Button>
+    )
+  }
+
+  export default ButtonLoading
+  ```
+</ComponentExample>
+
+### With Icon
+
+<ComponentExample component={<ButtonWithIcon />}>
+  ```tsx
+  import { Button, IconArrowBarUp } from '@tszhong0411/ui'
+
+  const ButtonWithIcon = () => {
+    return (
+      <Button>
+        <IconArrowBarUp size={16} className='mr-2' /> Upload
+      </Button>
+    )
+  }
+
+  export default ButtonWithIcon
+  ```
+</ComponentExample>

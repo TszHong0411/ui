@@ -1,0 +1,11 @@
+# Next.js
+.next
+
+# Contentlayer
+.contentlayer
+
+# Build
+dist
+
+# MDX
+*.mdx

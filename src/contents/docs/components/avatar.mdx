@@ -1,0 +1,43 @@
+---
+title: Avatar
+description: An image element with a fallback for representing the user.
+source: https://github.com/tszhong0411/ui/blob/main/packages/ui/src/avatar.tsx
+docs: https://github.com/tszhong0411/ui/blob/main/src/contents/docs/components/avatar.mdx
+api: https://www.radix-ui.com/docs/primitives/components/avatar#api-reference
+---
+
+<ComponentExample component={<AvatarDemo />}>
+  ```tsx
+  import { Avatar, AvatarFallback, AvatarImage } from '@tszhong0411/ui'
+
+  const AvatarDemo = () => {
+    return (
+      <Avatar>
+        <AvatarImage
+          src='https://github.com/tszhong0411.png'
+          alt='@tszhong0411'
+        />
+        <AvatarFallback>TH</AvatarFallback>
+      </Avatar>
+    )
+  }
+
+  export default AvatarDemo
+  ```
+</ComponentExample>
+
+## Usage
+
+```tsx
+import { Avatar, AvatarFallback, AvatarImage } from '@tszhong0411/ui'
+```
+
+```tsx
+<Avatar>
+  <AvatarImage
+    src='https://github.com/tszhong0411.png'
+    alt='@tszhong0411'
+  />
+  <AvatarFallback>TH</AvatarFallback>
+</Avatar>
+```

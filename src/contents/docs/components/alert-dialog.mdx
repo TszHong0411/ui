@@ -1,0 +1,76 @@
+---
+title: Alert Dialog
+description: A modal dialog that interrupts the user with important content and expects a response.
+source: https://github.com/tszhong0411/ui/blob/main/packages/ui/src/alert-dialog.tsx
+docs: https://github.com/tszhong0411/ui/blob/main/src/contents/docs/components/alert-dialog.mdx
+api: https://www.radix-ui.com/docs/primitives/components/alert-dialog#api-reference
+---
+
+<ComponentExample component={<AlertDialogDemo />}>
+  ```tsx
+  import { Button } from '@tszhong0411/ui'
+  import {
+    AlertDialog,
+    AlertDialogAction,
+    AlertDialogCancel,
+    AlertDialogContent,
+    AlertDialogDescription,
+    AlertDialogTitle,
+    AlertDialogTrigger,
+  } from 'packages/ui/src/alert-dialog'
+
+  const AlertDialogDemo = () => {
+    return (
+      <AlertDialog>
+        <AlertDialogTrigger asChild>
+          <Button>Show Dialog</Button>
+        </AlertDialogTrigger>
+        <AlertDialogContent>
+          <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
+          <AlertDialogDescription>
+            This action cannot be undone. This will permanently delete your
+            account and remove your data from our servers.
+          </AlertDialogDescription>
+          <div className='flex justify-between'>
+            <AlertDialogCancel>Cancel</AlertDialogCancel>
+            <AlertDialogAction>Continue</AlertDialogAction>
+          </div>
+        </AlertDialogContent>
+      </AlertDialog>
+    )
+  }
+
+  export default AlertDialogDemo
+  ```
+</ComponentExample>
+
+## Usage
+
+```tsx
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from '@tszhong0411/ui'
+```
+
+```tsx
+<AlertDialog>
+  <AlertDialogTrigger>Open</AlertDialogTrigger>
+  <AlertDialogContent>
+    <AlertDialogTitle>Are you sure absolutely sure?</AlertDialogTitle>
+    <AlertDialogDescription>
+      This action cannot be undone. This will permanently delete your
+      account and remove your data from our servers.
+    </AlertDialogDescription>
+    <div className='flex justify-between'>
+      <AlertDialogCancel>Cancel</AlertDialogCancel>
+      <AlertDialogAction>Continue</AlertDialogAction>
+    </div>
+  </AlertDialogContent>
+</AlertDialog>
+```

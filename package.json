@@ -1,21 +1,93 @@
 {
+  "name": "docs",
   "private": true,
+  "version": "0.0.0",
+  "license": "MIT",
+  "type": "module",
+  "description": "The documentation for @tszhong0411/ui",
+  "author": "Lai Tsz Hong <info@honghong.me> (https://github.com/tszhong0411/)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tszhong0411/ui.git"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev",
-    "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "dev": "next dev",
+    "build": "yarn build:utils && yarn build:ui && next build",
+    "build:ui": "yarn workspace @tszhong0411/ui build",
+    "build:utils": "yarn workspace @tszhong0411/utils build",
+    "clean": "rimraf .next .contentlayer && yarn clean:utils && yarn clean:ui",
+    "clean:ui": "yarn workspace @tszhong0411/ui clean",
+    "clean:utils": "yarn workspace @tszhong0411/utils clean",
+    "start": "next start",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "format": "prettier -w .",
+    "type-check": "tsc --noEmit",
+    "prepare": "husky install"
+  },
+  "prettier": "@tszhong0411/prettier-config",
+  "dependencies": {
+    "@vercel/analytics": "^1.0.1",
+    "contentlayer": "^0.3.2",
+    "next": "13.2.5-canary.17",
+    "next-contentlayer": "^0.3.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-use": "^17.4.0",
+    "rehype-slug": "^5.1.0",
+    "remark-gfm": "^3.0.1",
+    "unist-util-visit": "^4.1.2",
+    "zustand": "^4.3.8"
   },
   "devDependencies": {
-    "eslint": "^7.32.0",
-    "eslint-config-custom": "*",
-    "prettier": "^2.5.1",
-    "turbo": "latest"
+    "@changesets/cli": "^2.26.1",
+    "@commitlint/cli": "^17.6.3",
+    "@commitlint/config-conventional": "^17.6.3",
+    "@tailwindcss/typography": "^0.5.9",
+    "@tszhong0411/eslint-config": "^1.0.13",
+    "@tszhong0411/prettier-config": "^1.0.2",
+    "@tszhong0411/tsconfig": "^1.0.1",
+    "@types/node": "^20.1.1",
+    "@types/react": "^18.2.6",
+    "@types/react-dom": "^18.2.4",
+    "autoprefixer": "^10.4.14",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.40.0",
+    "eslint-config-next": "13.2.5-canary.17",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.2",
+    "postcss": "^8.4.23",
+    "prettier": "^2.8.8",
+    "tailwindcss": "^3.3.2",
+    "typescript": "^5.0.4"
   },
-  "name": "ui",
-  "packageManager": "yarn@1.22.19",
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ]
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint"
+    ],
+    "*.{json,css,scss,md,mdx,js,jsx,ts,tsx,cjs,mjs}": [
+      "prettier -c"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "next/core-web-vitals",
+      "@tszhong0411/eslint-config"
+    ],
+    "parserOptions": {
+      "project": "./tsconfig.json",
+      "ecmaVersion": "latest"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "engines": {
+    "node": "18.x"
+  }
 }

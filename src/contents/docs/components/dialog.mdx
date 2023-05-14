@@ -1,0 +1,82 @@
+---
+title: Dialog
+description: A window overlaid on either the primary window or another dialog window, rendering the content underneath inert.
+source: https://github.com/tszhong0411/ui/blob/main/packages/ui/src/dialog.tsx
+docs: https://github.com/tszhong0411/ui/blob/main/src/contents/docs/components/dialog.mdx
+api: https://www.radix-ui.com/docs/primitives/components/dialog#api-reference
+---
+
+<ComponentExample component={<DialogDemo />}>
+  ```tsx
+  import {
+    Button,
+    Dialog,
+    DialogContent,
+    DialogDescription,
+    DialogTitle,
+    DialogTrigger,
+    Input,
+    Label,
+  } from '@tszhong0411/ui'
+
+  const DialogDemo = () => {
+    return (
+      <Dialog>
+        <DialogTrigger asChild>
+          <Button>Edit Profile</Button>
+        </DialogTrigger>
+        <DialogContent className='sm:max-w-[425px]'>
+          <DialogTitle>Edit profile</DialogTitle>
+          <DialogDescription>
+            Make changes to your profile here. Click save when you're done.
+          </DialogDescription>
+          <div className='grid gap-4 pb-6 pt-2'>
+            <div className='grid grid-cols-4 items-center gap-4'>
+              <Label htmlFor='name' className='text-right'>
+                Name
+              </Label>
+              <Input id='name' value='Pedro Duarte' className='col-span-3' />
+            </div>
+            <div className='grid grid-cols-4 items-center gap-4'>
+              <Label htmlFor='username' className='text-right'>
+                Username
+              </Label>
+              <Input id='username' value='@peduarte' className='col-span-3' />
+            </div>
+          </div>
+          <Button type='submit' className='ml-auto'>
+            Save changes
+          </Button>
+        </DialogContent>
+      </Dialog>
+    )
+  }
+
+  export default DialogDemo
+  ```
+</ComponentExample>
+
+## Usage
+
+```tsx
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogTitle,
+  DialogTrigger,
+} from '@tszhong0411/ui'
+```
+
+```tsx
+<Dialog>
+  <DialogTrigger>Open</DialogTrigger>
+  <DialogContent>
+    <DialogTitle>Are you sure absolutely sure?</DialogTitle>
+    <DialogDescription>
+      This action cannot be undone. This will permanently delete your account
+      and remove your data from our servers.
+    </DialogDescription>
+  </DialogContent>
+</Dialog>
+```

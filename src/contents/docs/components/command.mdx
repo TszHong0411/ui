@@ -1,0 +1,107 @@
+---
+title: Command
+description: A command menu for implementing command interfaces with search input, command list, grouping, shortcuts, and separators.
+source: https://github.com/tszhong0411/ui/blob/main/packages/ui/src/command.tsx
+docs: https://github.com/tszhong0411/ui/blob/main/src/contents/docs/components/command.mdx
+---
+
+<ComponentExample component={<CommandDemo />}>
+  ```tsx
+  import {
+    Command,
+    CommandEmpty,
+    CommandGroup,
+    CommandInput,
+    CommandItem,
+    CommandList,
+    CommandSeparator,
+    CommandShortcut,
+    IconCalculator,
+    IconCalendar,
+    IconCreditCard,
+    IconMoodSmile,
+    IconSettings,
+    IconUser,
+  } from '@tszhong0411/ui'
+
+  const CommandDemo = () => {
+    return (
+      <Command className='rounded-lg border border-accent-2'>
+        <CommandInput placeholder='Type a command or search...' />
+        <CommandList>
+          <CommandEmpty>No results found.</CommandEmpty>
+          <CommandGroup heading='Suggestions'>
+            <CommandItem>
+              <IconCalendar size={16} className='mr-2' />
+              <span>Calendar</span>
+            </CommandItem>
+            <CommandItem>
+              <IconMoodSmile size={16} className='mr-2' />
+              <span>Search Emoji</span>
+            </CommandItem>
+            <CommandItem>
+              <IconCalculator size={16} className='mr-2' />
+              <span>Calculator</span>
+            </CommandItem>
+          </CommandGroup>
+          <CommandSeparator />
+          <CommandGroup heading='Settings'>
+            <CommandItem>
+              <IconUser size={16} className='mr-2' />
+              <span>Profile</span>
+              <CommandShortcut meta>P</CommandShortcut>
+            </CommandItem>
+            <CommandItem>
+              <IconCreditCard size={16} className='mr-2' />
+              <span>Billing</span>
+              <CommandShortcut meta>B</CommandShortcut>
+            </CommandItem>
+            <CommandItem>
+              <IconSettings size={16} className='mr-2' />
+              <span>Settings</span>
+              <CommandShortcut meta>S</CommandShortcut>
+            </CommandItem>
+          </CommandGroup>
+        </CommandList>
+      </Command>
+    )
+  }
+
+  export default CommandDemo
+  ```
+</ComponentExample>
+
+## Usage
+
+```tsx
+import {
+  CommandDialog,
+  CommandEmpty,
+  CommandGroup,
+  CommandInput,
+  CommandItem,
+  CommandList,
+  CommandSeparator,
+  CommandShortcut,
+} from '@tszhong0411/ui'
+```
+
+```tsx
+<Command>
+  <CommandInput placeholder="Type a command or search..." />
+  <CommandList>
+    <CommandEmpty>No results found.</CommandEmpty>
+    <CommandGroup heading="Suggestions">
+      <CommandItem>Calendar</CommandItem>
+      <CommandItem>Search Emoji</CommandItem>
+      <CommandItem>Calculator</CommandItem>
+    </CommandGroup>
+    <CommandSeparator />
+    <CommandGroup heading="Settings">
+      <CommandItem>Profile</CommandItem>
+      <CommandItem>Billing</CommandItem>
+      <CommandItem>Settings</CommandItem>
+    </CommandGroup>
+  </CommandList>
+</Command>
+```
