@@ -1,5 +1,11 @@
 # @tszhong0411/ui
 
+## 1.0.3
+
+### Patch Changes
+
+- 65eaff9: add 'use client' injection
+
 ## 1.0.2
 
 ### Patch Changes
