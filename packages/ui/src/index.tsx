@@ -31,9 +31,3 @@ export * from './tailwind-preset'
 export * from './textarea'
 export * from './toggle'
 export * from './tooltip'
-
-// libraries
-export * from '@tabler/icons-react'
-export * from 'framer-motion'
-export * from 'next-themes'
-export * from 'react-hot-toast'
