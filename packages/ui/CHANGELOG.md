@@ -1,5 +1,13 @@
 # @tszhong0411/ui
 
+## 1.0.1
+
+### Patch Changes
+
+- c5d3b41: build
+- Updated dependencies [c5d3b41]
+  - @tszhong0411/utils@1.0.1
+
 ## 1.0.0
 
 ### Major Changes
