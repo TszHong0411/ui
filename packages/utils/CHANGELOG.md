@@ -1,5 +1,11 @@
 # @tszhong0411/utils
 
+## 1.0.2
+
+### Patch Changes
+
+- 21a6b91: add classname to fragment
+
 ## 1.0.1
 
 ### Patch Changes
