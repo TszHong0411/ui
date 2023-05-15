@@ -43,7 +43,7 @@ const Pre = (props: PreProps) => {
   }, [isCopied])
 
   return (
-    <div className='relative'>
+    <>
       <pre
         className={cx('max-h-96 overflow-auto', className)}
         ref={textInput}
@@ -60,7 +60,7 @@ const Pre = (props: PreProps) => {
       >
         {isCopied ? <IconCheck size={16} /> : <IconCopy size={16} />}
       </button>
-    </div>
+    </>
   )
 }
 
