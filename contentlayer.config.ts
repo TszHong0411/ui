@@ -1,8 +1,7 @@
+import { rehypePrettyCode } from '@tszhong0411/utils'
 import { defineDocumentType, makeSource } from 'contentlayer/source-files'
 import rehypeSlug from 'rehype-slug'
 import remarkGfm from 'remark-gfm'
-
-import { rehypePrettyCode } from './packages/utils'
 
 const Doc = defineDocumentType(() => ({
   name: 'Doc',

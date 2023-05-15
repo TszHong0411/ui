@@ -15,8 +15,9 @@
   ],
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "build:packages": "yarn workspace @tszhong0411/utils build && yarn workspace @tszhong0411/ui build",
+    "build": "yarn build:utils && yarn build:ui && next build",
+    "build:ui": "yarn workspace @tszhong0411/ui build",
+    "build:utils": "yarn workspace @tszhong0411/utils build",
     "clean": "rimraf .next .contentlayer && yarn clean:utils && yarn clean:ui",
     "clean:ui": "yarn workspace @tszhong0411/ui clean",
     "clean:utils": "yarn workspace @tszhong0411/utils clean",
