@@ -20,7 +20,7 @@ const addClassName = (node: Element, className: string) => {
 
 type RehypePrettyCode = [typeof rehypePrettyCodePlugin, Partial<Options>]
 
-const rehypeRemoveFragmentDivs = () => {
+const rehypeAddClassNameToFragment = () => {
   return async (tree: Root) => {
     const { visit } = await import('unist-util-visit')
 
@@ -33,7 +33,9 @@ const rehypeRemoveFragmentDivs = () => {
       if (typeof parent?.children === 'undefined') return
       if (typeof index !== 'number') return
 
-      parent?.children.splice(index, 1, ...node.children)
+      Object.assign(node.properties, {
+        className: cx(node.properties?.className, 'relative'),
+      })
     })
   }
 }
@@ -113,7 +115,7 @@ const _rehypePrettyCode: RehypePrettyCode = [
 
 const rehypePrettyCode = [
   _rehypePrettyCode,
-  rehypeRemoveFragmentDivs,
+  rehypeAddClassNameToFragment,
   rehypeHideCodeBlocks,
 ]
 
