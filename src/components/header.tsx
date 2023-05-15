@@ -4,7 +4,6 @@ import { IconBrandGithub, IconMenu } from '@tabler/icons-react'
 import { Button, Logo } from '@tszhong0411/ui'
 import Link from 'next/link'
 import React from 'react'
-import { useLockBodyScroll } from 'react-use'
 
 import { useSidebar } from '@/hooks/use-sidebar'
 
@@ -14,8 +13,6 @@ import ThemeToggle from './theme-toggle'
 
 const Header = () => {
   const { open, setOpen } = useSidebar()
-
-  useLockBodyScroll(open)
 
   return (
     <header className='sticky top-0 z-40 border-b border-accent-2 bg-accent-bg'>
