@@ -6,7 +6,7 @@ import { cx } from '@tszhong0411/utils'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import React from 'react'
-import { useLockBodyScroll, useToggle } from 'react-use'
+import { useLockBodyScroll } from 'react-use'
 
 import { useSidebar } from '@/hooks/use-sidebar'
 
@@ -15,14 +15,8 @@ import { docs } from '@/config/docs'
 const Sidebar = () => {
   const pathname = usePathname()
   const { open, setOpen } = useSidebar()
-  const [locked, toggleLocked] = useToggle(false)
 
-  const onClose = () => {
-    toggleLocked()
-    setOpen(false)
-  }
-
-  useLockBodyScroll(locked)
+  useLockBodyScroll(open)
 
   return (
     <aside
@@ -53,7 +47,7 @@ const Sidebar = () => {
                         'text-accent-5 hover:bg-accent-1',
                       isExternal && 'flex items-center justify-between'
                     )}
-                    onClick={() => open && onClose()}
+                    onClick={() => open && setOpen(false)}
                     {...(isExternal && {
                       target: '_blank',
                       rel: 'noopener noreferrer',

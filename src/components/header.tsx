@@ -4,7 +4,7 @@ import { IconBrandGithub, IconMenu } from '@tabler/icons-react'
 import { Button, Logo } from '@tszhong0411/ui'
 import Link from 'next/link'
 import React from 'react'
-import { useLockBodyScroll, useToggle } from 'react-use'
+import { useLockBodyScroll } from 'react-use'
 
 import { useSidebar } from '@/hooks/use-sidebar'
 
@@ -14,9 +14,8 @@ import ThemeToggle from './theme-toggle'
 
 const Header = () => {
   const { open, setOpen } = useSidebar()
-  const [locked, toggleLocked] = useToggle(false)
 
-  useLockBodyScroll(locked)
+  useLockBodyScroll(open)
 
   return (
     <header className='sticky top-0 z-40 border-b border-accent-2 bg-accent-bg'>
@@ -25,10 +24,7 @@ const Header = () => {
           <Button
             variant='ghost'
             className='flex h-9 w-9 items-center justify-center p-0 md:hidden'
-            onClick={() => {
-              toggleLocked()
-              setOpen(!open)
-            }}
+            onClick={() => setOpen(!open)}
           >
             <IconMenu />
           </Button>
