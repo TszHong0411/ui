@@ -24,7 +24,7 @@ jobs:
         run: yarn
 
       - name: Build packages
-        run: yarn build:utils && yarn build:ui
+        run: yarn build:packages
 
       - name: Create Release Pull Request or Publish to npm
         id: changesets
