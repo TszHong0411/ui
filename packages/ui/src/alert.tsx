@@ -7,9 +7,11 @@ const alertVariants = cva(
     variants: {
       variant: {
         default: 'border-accent-2',
-        danger: 'border-red-200/30 bg-red-900/30 text-red-200',
-        info: 'border-blue-200/30 bg-blue-900/30 text-blue-200',
-        warning: 'border-yellow-200/30 bg-yellow-700/30 text-yellow-200',
+        danger:
+          'border-red-200 bg-red-100 text-red-900 dark:border-red-200/30 dark:bg-red-900/30 dark:text-red-200',
+        info: 'border-blue-200 bg-blue-100 text-blue-900 dark:border-blue-200/30 dark:bg-blue-900/30 dark:text-blue-200',
+        warning:
+          'border-yellow-100 bg-yellow-50 text-yellow-900 dark:border-yellow-200/30 dark:bg-yellow-700/30 dark:text-yellow-200',
       },
     },
     defaultVariants: {
@@ -59,13 +61,7 @@ const AlertDescription = React.forwardRef<
 >((props, ref) => {
   const { className, ...rest } = props
 
-  return (
-    <div
-      ref={ref}
-      className={cx('text-sm text-accent-5', className)}
-      {...rest}
-    />
-  )
+  return <div ref={ref} className={cx('text-sm', className)} {...rest} />
 })
 
 Alert.displayName = 'Alert'
