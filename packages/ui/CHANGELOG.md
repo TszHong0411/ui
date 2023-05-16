@@ -1,5 +1,11 @@
 # @tszhong0411/ui
 
+## 1.0.5
+
+### Patch Changes
+
+- 70e121b: new component - Alert
+
 ## 1.0.4
 
 ### Patch Changes

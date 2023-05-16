@@ -1,6 +1,6 @@
 {
   "name": "@tszhong0411/ui",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A UI library for tszhong0411 projects",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
