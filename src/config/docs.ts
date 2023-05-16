@@ -48,6 +48,10 @@ export const docs: Docs = {
           href: '/docs/components/alert-dialog',
         },
         {
+          title: 'Alert',
+          href: '/docs/components/alert',
+        },
+        {
           title: 'Aspect Ratio',
           href: '/docs/components/aspect-ratio',
         },

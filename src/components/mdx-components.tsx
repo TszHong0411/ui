@@ -1,6 +1,10 @@
 import ComponentExample from '@/components/component-example'
 
 import AccordionDemo from './examples/accordion/demo'
+import AlertDanger from './examples/alert/danger'
+import AlertDemo from './examples/alert/demo'
+import AlertInfo from './examples/alert/info'
+import AlertWarning from './examples/alert/warning'
 import AlertDialogDemo from './examples/alert-dialog/demo'
 import AspectRatioDemo from './examples/aspect-ratio/demo'
 import AspectRatioMap from './examples/aspect-ratio/map'
@@ -64,6 +68,12 @@ const MDXComponents = {
 
   // Alert Dialog
   AlertDialogDemo,
+
+  // Alert
+  AlertDemo,
+  AlertDanger,
+  AlertInfo,
+  AlertWarning,
 
   // Aspect Ratio
   AspectRatioDemo,

@@ -1,0 +1,99 @@
+---
+title: Alert
+description: Attract user attention with important static message.
+source: https://github.com/tszhong0411/ui/blob/main/packages/ui/src/alert.tsx
+docs: https://github.com/tszhong0411/ui/blob/main/src/contents/docs/components/alert.mdx
+---
+
+<ComponentExample component={<AlertDemo />}>
+  ```tsx
+  import { IconAlertCircle } from '@tabler/icons-react'
+  import { Alert, AlertDescription, AlertTitle } from '@tszhong0411/ui'
+
+  const AlertDemo = () => {
+    return (
+      <Alert icon={<IconAlertCircle size={20} />}>
+        <AlertTitle>Boom!</AlertTitle>
+        <AlertDescription>Here is a important message.</AlertDescription>
+      </Alert>
+    )
+  }
+
+  export default AlertDemo
+  ```
+</ComponentExample>
+
+## Usage
+
+```tsx
+import { Alert, AlertDescription, AlertTitle } from '@tszhong0411/ui'
+```
+
+```tsx
+<Alert icon={<IconAlertCircle size={20} />}>
+  <AlertTitle>Boom!</AlertTitle>
+  <AlertDescription>Here is a important message.</AlertDescription>
+</Alert>
+```
+
+## Examples
+
+### Danger
+
+<ComponentExample component={<AlertDanger />}>
+  ```tsx
+  import { IconAlertCircle } from '@tabler/icons-react'
+  import { Alert, AlertDescription, AlertTitle } from '@tszhong0411/ui'
+
+  const AlertDanger = () => {
+    return (
+      <Alert icon={<IconAlertCircle size={20} />} variant='danger'>
+        <AlertTitle>Boom!</AlertTitle>
+        <AlertDescription>Here is a important message.</AlertDescription>
+      </Alert>
+    )
+  }
+
+  export default AlertDanger
+  ```
+</ComponentExample>
+
+### Info
+
+<ComponentExample component={<AlertInfo />}>
+  ```tsx
+  import { IconAlertCircle } from '@tabler/icons-react'
+  import { Alert, AlertDescription, AlertTitle } from '@tszhong0411/ui'
+
+  const AlertInfo = () => {
+    return (
+      <Alert icon={<IconAlertCircle size={20} />} variant='info'>
+        <AlertTitle>Boom!</AlertTitle>
+        <AlertDescription>Here is a important message.</AlertDescription>
+      </Alert>
+    )
+  }
+
+  export default AlertInfo
+  ```
+</ComponentExample>
+
+### Warning
+
+<ComponentExample component={<AlertWarning />}>
+  ```tsx
+  import { IconAlertCircle } from '@tabler/icons-react'
+  import { Alert, AlertDescription, AlertTitle } from '@tszhong0411/ui'
+
+  const AlertWarning = () => {
+    return (
+      <Alert icon={<IconAlertCircle size={20} />} variant='warning'>
+        <AlertTitle>Boom!</AlertTitle>
+        <AlertDescription>Here is a important message.</AlertDescription>
+      </Alert>
+    )
+  }
+
+  export default AlertWarning
+  ```
+</ComponentExample>
