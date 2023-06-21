@@ -42,8 +42,10 @@
     "react-hot-toast": "^2.4.1",
     "react-remove-scroll": "^2.5.6",
     "react-use": "^17.4.0",
+    "rehype-pretty-code": "^0.9.9",
     "rehype-slug": "^5.1.0",
     "remark-gfm": "^3.0.1",
+    "shiki": "^0.14.2",
     "unist-util-visit": "^4.1.2",
     "zustand": "^4.3.8"
   },
