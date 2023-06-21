@@ -1,5 +1,11 @@
 # @tszhong0411/utils
 
+## 1.0.3
+
+### Patch Changes
+
+- 23e14d4: remove rehype-pretty-code
+
 ## 1.0.2
 
 ### Patch Changes

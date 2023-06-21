@@ -1,5 +1,13 @@
 # @tszhong0411/ui
 
+## 1.0.7
+
+### Patch Changes
+
+- 7a29c67: rename index.tsx to index.ts
+- Updated dependencies [23e14d4]
+  - @tszhong0411/utils@1.0.3
+
 ## 1.0.6
 
 ### Patch Changes
