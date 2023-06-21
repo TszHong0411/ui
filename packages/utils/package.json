@@ -29,26 +29,19 @@
     "access": "public"
   },
   "scripts": {
-    "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
+    "build": "tsup src/index.ts --format esm,cjs --dts",
     "clean": "rimraf dist",
-    "dev": "tsup src/index.tsx --format esm,cjs --watch --dts --external react"
+    "dev": "tsup src/index.ts --format esm,cjs --watch --dts"
   },
   "devDependencies": {
     "@tszhong0411/tsconfig": "1.0.1",
-    "@types/hast": "^2.3.4",
-    "@types/react": "^18.0.38",
-    "@types/react-dom": "^18.0.11",
     "eslint": "^8.39.0",
-    "react": "^18.2.0",
     "tsup": "^6.7.0",
     "typescript": "^5.0.4"
   },
   "dependencies": {
     "class-variance-authority": "^0.5.3",
     "clsx": "^1.2.1",
-    "rehype-pretty-code": "^0.9.5",
-    "shiki": "^0.14.2",
-    "tailwind-merge": "^1.12.0",
-    "unist-util-visit": "^4.1.2"
+    "tailwind-merge": "^1.12.0"
   }
 }
