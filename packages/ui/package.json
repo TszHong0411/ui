@@ -29,9 +29,9 @@
     "access": "public"
   },
   "scripts": {
-    "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
+    "build": "tsup src/index.ts --format esm,cjs --dts --external react",
     "clean": "rimraf dist",
-    "dev": "tsup src/index.tsx --format esm,cjs --watch --dts --external react"
+    "dev": "tsup src/index.ts --format esm,cjs --watch --dts --external react"
   },
   "devDependencies": {
     "@tszhong0411/tsconfig": "^1.0.1",
