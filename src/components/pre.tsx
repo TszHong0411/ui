@@ -1,7 +1,7 @@
 'use client'
 
-import { IconCheck, IconCopy } from '@tabler/icons-react'
 import { cx } from '@codewithhong/utils'
+import { IconCheck, IconCopy } from '@tabler/icons-react'
 import React from 'react'
 import { toast } from 'react-hot-toast'
 

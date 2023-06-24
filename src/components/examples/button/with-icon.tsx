@@ -1,5 +1,5 @@
-import { IconArrowBarUp } from '@tabler/icons-react'
 import { Button } from '@codewithhong/ui'
+import { IconArrowBarUp } from '@tabler/icons-react'
 
 const ButtonWithIcon = () => {
   return (

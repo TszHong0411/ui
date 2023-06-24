@@ -1,5 +1,5 @@
-import { IconLoader2 } from '@tabler/icons-react'
 import { cva, cx, VariantProps } from '@codewithhong/utils'
+import { IconLoader2 } from '@tabler/icons-react'
 import React from 'react'
 
 const buttonVariants = cva(

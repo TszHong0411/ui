@@ -1,5 +1,5 @@
-import { IconBold } from '@tabler/icons-react'
 import { Toggle } from '@codewithhong/ui'
+import { IconBold } from '@tabler/icons-react'
 
 const ToggleOutline = () => {
   return (

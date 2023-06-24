@@ -1,4 +1,3 @@
-import { IconPlus } from '@tabler/icons-react'
 import {
   Button,
   Tooltip,
@@ -6,6 +5,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from '@codewithhong/ui'
+import { IconPlus } from '@tabler/icons-react'
 
 const TooltipDemo = () => {
   return (

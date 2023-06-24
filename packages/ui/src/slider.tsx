@@ -1,5 +1,5 @@
-import * as SliderPrimitive from '@radix-ui/react-slider'
 import { cx } from '@codewithhong/utils'
+import * as SliderPrimitive from '@radix-ui/react-slider'
 import React from 'react'
 
 const Slider = React.forwardRef<

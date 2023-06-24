@@ -1,5 +1,5 @@
-import * as ScrollAreaPrimitive from '@radix-ui/react-scroll-area'
 import { cx } from '@codewithhong/utils'
+import * as ScrollAreaPrimitive from '@radix-ui/react-scroll-area'
 import React from 'react'
 
 const ScrollArea = React.forwardRef<

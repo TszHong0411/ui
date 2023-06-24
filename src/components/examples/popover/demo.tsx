@@ -1,4 +1,3 @@
-import { IconAdjustmentsHorizontal } from '@tabler/icons-react'
 import {
   Button,
   Input,
@@ -7,6 +6,7 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from '@codewithhong/ui'
+import { IconAdjustmentsHorizontal } from '@tabler/icons-react'
 
 const PopoverDemo = () => {
   return (

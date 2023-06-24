@@ -1,6 +1,6 @@
+import { cx } from '@codewithhong/utils'
 import * as CheckboxPrimitive from '@radix-ui/react-checkbox'
 import { IconCheck } from '@tabler/icons-react'
-import { cx } from '@codewithhong/utils'
 import React from 'react'
 
 const Checkbox = React.forwardRef<
