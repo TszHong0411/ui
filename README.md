@@ -1,4 +1,4 @@
-# @tszhong0411/ui
+# @codewithhong/ui
 
 UI library built using Radix UI and Tailwind CSS.
 
@@ -7,22 +7,22 @@ UI library built using Radix UI and Tailwind CSS.
 Inside your React project directory, install the library by running either of the following commands:
 
 ```bash
-npm i @tszhong0411/ui @tszhong0411/utils
+npm i @codewithhong/ui @codewithhong/utils
 
 # or
 
-yarn add @tszhong0411/ui @tszhong0411/utils
+yarn add @codewithhong/ui @codewithhong/utils
 ```
 
 Also, make sure you installed [tailwindcss](https://tailwindcss.com/docs/installation) and add the following to your `tailwind.config.js`:
 
 ```js
-import { tailwindPreset } from '@tszhong0411/ui'
+import { tailwindPreset } from '@codewithhong/ui'
 
 module.exports = {
   // ...
   content: [
-    './node_modules/@tszhong0411/**/*.{js,jsx,ts,tsx}', // the path of @tszhong0411/*
+    './node_modules/@codewithhong/**/*.{js,jsx,ts,tsx}', // the path of @codewithhong/*
   ],
   presets: [tailwindPreset],
 }
@@ -31,7 +31,7 @@ module.exports = {
 Import the `main.css`
 
 ```css
-@import '@tszhong0411/ui/dist/main.css';
+@import '@codewithhong/ui/dist/main.css';
 
 @tailwind base;
 @tailwind components;

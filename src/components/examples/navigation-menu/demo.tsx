@@ -8,8 +8,8 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
-} from '@tszhong0411/ui'
-import { cx } from '@tszhong0411/utils'
+} from '@codewithhong/ui'
+import { cx } from '@codewithhong/utils'
 import React from 'react'
 
 const NavigationMenuDemo = () => {

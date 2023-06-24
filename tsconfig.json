@@ -8,8 +8,8 @@
       "@/*": ["./src/*"],
       "~/*": ["./public/*"],
       "contentlayer/generated": ["./.contentlayer/generated"],
-      "@tszhong0411/ui": ["./packages/ui/src"],
-      "@tszhong0411/utils": ["./packages/utils/src"]
+      "@codewithhong/ui": ["./packages/ui/src"],
+      "@codewithhong/utils": ["./packages/utils/src"]
     },
     "plugins": [
       {
@@ -19,7 +19,7 @@
     "strictNullChecks": true
   },
   "exclude": ["./**/dist", "node_modules"],
-  "extends": "@tszhong0411/tsconfig",
+  "extends": "@codewithhong/tsconfig",
   "include": [
     "next-env.d.ts",
     "**/*.tsx",

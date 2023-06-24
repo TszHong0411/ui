@@ -1,4 +1,4 @@
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@tszhong0411/ui'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@codewithhong/ui'
 
 const TabsDemo = () => {
   return (

@@ -6,7 +6,7 @@ import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from '@tszhong0411/ui'
+} from '@codewithhong/ui'
 
 const PopoverDemo = () => {
   return (

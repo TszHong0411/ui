@@ -11,7 +11,7 @@ import {
   CommandList,
   CommandSeparator,
   Kbd,
-} from '@tszhong0411/ui'
+} from '@codewithhong/ui'
 import { useRouter } from 'next/navigation'
 import { useTheme } from 'next-themes'
 import React from 'react'

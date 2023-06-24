@@ -1,4 +1,4 @@
-import { Label, Textarea } from '@tszhong0411/ui'
+import { Label, Textarea } from '@codewithhong/ui'
 
 const TextareaWithLabel = () => {
   return (

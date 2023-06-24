@@ -1,4 +1,4 @@
-import { cx } from '@tszhong0411/utils'
+import { cx } from '@codewithhong/utils'
 import { defineDocumentType, makeSource } from 'contentlayer/source-files'
 import { Element, Root } from 'hast'
 import rehypePrettyCode from 'rehype-pretty-code'

@@ -1,7 +1,7 @@
 'use client'
 
 import { IconBrandGithub, IconMenu } from '@tabler/icons-react'
-import { Button, Logo } from '@tszhong0411/ui'
+import { Button, Logo } from '@codewithhong/ui'
 import Link from 'next/link'
 import React from 'react'
 
@@ -27,7 +27,7 @@ const Header = () => {
           </Button>
           <Link href='/docs' className='flex items-center gap-2.5'>
             <Logo width={22} height={22} />
-            <div className='hidden font-bold sm:block'>tszhong0411/ui</div>
+            <div className='hidden font-bold sm:block'>UI</div>
           </Link>
           <Navbar />
         </div>
@@ -38,7 +38,7 @@ const Header = () => {
             className='flex h-9 w-9 items-center justify-center p-0'
           >
             <a
-              href='https://github.com/tszhong0411/ui'
+              href='https://github.com/codewithhong/ui'
               target='_blank'
               rel='noopener noreferrer'
             >

@@ -11,7 +11,7 @@ import {
   MenubarSubContent,
   MenubarSubTrigger,
   MenubarTrigger,
-} from '@tszhong0411/ui'
+} from '@codewithhong/ui'
 import React from 'react'
 
 const MenubarDemo = () => {

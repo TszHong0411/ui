@@ -1,7 +1,7 @@
 {
-  "name": "@tszhong0411/ui",
+  "name": "@codewithhong/ui",
   "version": "1.0.7",
-  "description": "A UI library for tszhong0411 projects",
+  "description": "A UI library for CodeWithHong projects",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -13,14 +13,14 @@
     "components",
     "typescript"
   ],
-  "author": "Lai Tsz Hong <info@honghong.me> (https://github.com/tszhong0411/)",
-  "homepage": "https://github.com/tszhong0411/ui#readme",
+  "author": "Lai Tsz Hong <info@honghong.me> (https://github.com/codewithhong/)",
+  "homepage": "https://github.com/codewithhong/ui#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tszhong0411/ui.git"
+    "url": "git+https://github.com/codewithhong/ui.git"
   },
   "bugs": {
-    "url": "https://github.com/tszhong0411/ui/issues"
+    "url": "https://github.com/codewithhong/ui/issues"
   },
   "files": [
     "dist/**"
@@ -34,7 +34,7 @@
     "dev": "tsup src/index.ts --format esm,cjs --watch --dts --external react"
   },
   "devDependencies": {
-    "@tszhong0411/tsconfig": "^1.0.1",
+    "@codewithhong/tsconfig": "^2.0.0",
     "@types/react": "^18.0.38",
     "@types/react-dom": "^18.0.11",
     "eslint": "^8.39.0",
@@ -68,7 +68,7 @@
     "@radix-ui/react-toggle": "^1.0.2",
     "@radix-ui/react-tooltip": "^1.0.5",
     "@tabler/icons-react": "^2.18.0",
-    "@tszhong0411/utils": "^1.0.3",
+    "@codewithhong/utils": "^1.0.3",
     "cmdk": "^0.2.0",
     "framer-motion": "^10.12.10"
   }

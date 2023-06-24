@@ -1,6 +1,6 @@
 import * as NavigationMenuPrimitive from '@radix-ui/react-navigation-menu'
 import { IconChevronDown } from '@tabler/icons-react'
-import { cva, cx } from '@tszhong0411/utils'
+import { cva, cx } from '@codewithhong/utils'
 import React from 'react'
 
 const NavigationMenuItem = NavigationMenuPrimitive.Item

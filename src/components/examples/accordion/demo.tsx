@@ -3,7 +3,7 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from '@tszhong0411/ui'
+} from '@codewithhong/ui'
 
 const AccordionDemo = () => {
   return (

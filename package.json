@@ -4,11 +4,11 @@
   "version": "0.0.0",
   "license": "MIT",
   "type": "module",
-  "description": "The documentation for @tszhong0411/ui",
-  "author": "Lai Tsz Hong <info@honghong.me> (https://github.com/tszhong0411/)",
+  "description": "The documentation for @codewithhong/ui",
+  "author": "Lai Tsz Hong <info@honghong.me> (https://github.com/codewithhong/)",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tszhong0411/ui.git"
+    "url": "git+https://github.com/codewithhong/ui.git"
   },
   "workspaces": [
     "packages/*"
@@ -16,11 +16,11 @@
   "scripts": {
     "dev": "next dev",
     "build": "yarn build:utils && yarn build:ui && next build",
-    "build:ui": "yarn workspace @tszhong0411/ui build",
-    "build:utils": "yarn workspace @tszhong0411/utils build",
+    "build:ui": "yarn workspace @codewithhong/ui build",
+    "build:utils": "yarn workspace @codewithhong/utils build",
     "clean": "rimraf .next .contentlayer && yarn clean:utils && yarn clean:ui",
-    "clean:ui": "yarn workspace @tszhong0411/ui clean",
-    "clean:utils": "yarn workspace @tszhong0411/utils clean",
+    "clean:ui": "yarn workspace @codewithhong/ui clean",
+    "clean:utils": "yarn workspace @codewithhong/utils clean",
     "start": "next start",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
@@ -28,7 +28,7 @@
     "type-check": "tsc --noEmit",
     "prepare": "husky install"
   },
-  "prettier": "@tszhong0411/prettier-config",
+  "prettier": "@codewithhong/prettier-config",
   "dependencies": {
     "@tabler/icons-react": "^2.18.0",
     "@vercel/analytics": "^1.0.1",
@@ -51,12 +51,12 @@
   },
   "devDependencies": {
     "@changesets/cli": "^2.26.1",
+    "@codewithhong/eslint-config": "^2.0.0",
+    "@codewithhong/prettier-config": "^2.0.0",
+    "@codewithhong/tsconfig": "^2.0.0",
     "@commitlint/cli": "^17.6.3",
     "@commitlint/config-conventional": "^17.6.3",
     "@tailwindcss/typography": "^0.5.9",
-    "@tszhong0411/eslint-config": "^1.0.13",
-    "@tszhong0411/prettier-config": "^1.0.2",
-    "@tszhong0411/tsconfig": "^1.0.1",
     "@types/node": "^20.1.1",
     "@types/react": "^18.2.6",
     "@types/react-dom": "^18.2.4",
@@ -82,7 +82,7 @@
   "eslintConfig": {
     "extends": [
       "next/core-web-vitals",
-      "@tszhong0411/eslint-config"
+      "@codewithhong/eslint-config"
     ],
     "parserOptions": {
       "project": "./tsconfig.json",

@@ -15,11 +15,11 @@ export const site: Site = {
     process.env.NODE_ENV === 'production'
       ? 'https://ui.honghong.me'
       : 'http://localhost:3000',
-  title: 'tszhong0411/ui',
-  name: 'tszhong0411/ui',
-  keywords: ['tszhong0411', 'tszhong0411/ui', 'ui', 'react'],
-  titleTemplate: '- tszhong0411/ui',
-  description: 'The documentation site for tszhong0411/ui.',
+  title: 'UI',
+  name: 'codewithhong',
+  keywords: ['codewithhong', 'codewithhong/ui', 'ui', 'react'],
+  titleTemplate: '- UI',
+  description: 'The documentation site for codewithhong/ui.',
   favicons: [
     {
       rel: 'icon',

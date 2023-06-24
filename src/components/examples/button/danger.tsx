@@ -1,4 +1,4 @@
-import { Button } from '@tszhong0411/ui'
+import { Button } from '@codewithhong/ui'
 
 const ButtonDanger = () => {
   return <Button variant='danger'>Button</Button>

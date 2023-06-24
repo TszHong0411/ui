@@ -15,7 +15,7 @@ import {
   DropdownMenuSubContent,
   DropdownMenuSubTrigger,
   DropdownMenuTrigger,
-} from '@tszhong0411/ui'
+} from '@codewithhong/ui'
 import React from 'react'
 
 const DropdownMenuDemo = () => {

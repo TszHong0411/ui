@@ -1,4 +1,4 @@
-import { AspectRatio } from '@tszhong0411/ui'
+import { AspectRatio } from '@codewithhong/ui'
 
 const AspectRatioVideo = () => {
   return (

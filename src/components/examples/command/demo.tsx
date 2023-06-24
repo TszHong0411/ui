@@ -15,7 +15,7 @@ import {
   CommandList,
   CommandSeparator,
   CommandShortcut,
-} from '@tszhong0411/ui'
+} from '@codewithhong/ui'
 
 const CommandDemo = () => {
   return (

@@ -7,7 +7,7 @@ import {
   DialogTrigger,
   Input,
   Label,
-} from '@tszhong0411/ui'
+} from '@codewithhong/ui'
 
 const DialogDemo = () => {
   return (

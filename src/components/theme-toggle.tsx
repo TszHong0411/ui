@@ -1,7 +1,7 @@
 'use client'
 
 import { IconMoon, IconSun } from '@tabler/icons-react'
-import { Button } from '@tszhong0411/ui'
+import { Button } from '@codewithhong/ui'
 import { useTheme } from 'next-themes'
 import React from 'react'
 

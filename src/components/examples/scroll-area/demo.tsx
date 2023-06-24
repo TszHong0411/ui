@@ -1,4 +1,4 @@
-import { ScrollArea, Separator } from '@tszhong0411/ui'
+import { ScrollArea, Separator } from '@codewithhong/ui'
 import React from 'react'
 
 const TAGS = Array.from({ length: 50 }).map(

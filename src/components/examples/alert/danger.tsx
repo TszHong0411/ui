@@ -1,5 +1,5 @@
 import { IconAlertCircle } from '@tabler/icons-react'
-import { Alert, AlertDescription, AlertTitle } from '@tszhong0411/ui'
+import { Alert, AlertDescription, AlertTitle } from '@codewithhong/ui'
 
 const AlertDanger = () => {
   return (

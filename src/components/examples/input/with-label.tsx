@@ -1,4 +1,4 @@
-import { Input, Label } from '@tszhong0411/ui'
+import { Input, Label } from '@codewithhong/ui'
 
 const InputWithLabel = () => {
   return (

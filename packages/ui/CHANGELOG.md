@@ -1,4 +1,4 @@
-# @tszhong0411/ui
+# @codewithhong/ui
 
 ## 1.0.7
 

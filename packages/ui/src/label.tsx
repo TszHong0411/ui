@@ -1,5 +1,5 @@
 import * as LabelPrimitive from '@radix-ui/react-label'
-import { cx } from '@tszhong0411/utils'
+import { cx } from '@codewithhong/utils'
 import React from 'react'
 
 const Label = React.forwardRef<

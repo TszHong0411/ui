@@ -1,5 +1,5 @@
 import { IconBold } from '@tabler/icons-react'
-import { Toggle } from '@tszhong0411/ui'
+import { Toggle } from '@codewithhong/ui'
 
 const ToggleDisabled = () => {
   return (

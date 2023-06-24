@@ -1,4 +1,4 @@
-import { Progress } from '@tszhong0411/ui'
+import { Progress } from '@codewithhong/ui'
 import React from 'react'
 
 const ProgressDemo = () => {

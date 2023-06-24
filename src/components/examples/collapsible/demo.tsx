@@ -4,7 +4,7 @@ import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
-} from '@tszhong0411/ui'
+} from '@codewithhong/ui'
 import React from 'react'
 
 const CollapsibleDemo = () => {
