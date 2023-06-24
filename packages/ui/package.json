@@ -1,6 +1,6 @@
 {
   "name": "@codewithhong/ui",
-  "version": "1.0.7",
+  "version": "2.0.0",
   "description": "A UI library for CodeWithHong projects",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -68,7 +68,7 @@
     "@radix-ui/react-toggle": "^1.0.2",
     "@radix-ui/react-tooltip": "^1.0.5",
     "@tabler/icons-react": "^2.18.0",
-    "@codewithhong/utils": "^1.0.3",
+    "@codewithhong/utils": "^2.0.0",
     "cmdk": "^0.2.0",
     "framer-motion": "^10.12.10"
   }
