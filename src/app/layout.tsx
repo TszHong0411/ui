@@ -41,7 +41,16 @@ export const metadata: Metadata = {
     creator: '@codewithhong',
   },
   keywords: site.keywords,
-  themeColor: '#000',
+  themeColor: [
+    {
+      media: '(prefers-color-scheme: light)',
+      color: '#ffffff',
+    },
+    {
+      media: '(prefers-color-scheme: dark)',
+      color: '#000000',
+    },
+  ],
   creator: 'codewithhong',
   openGraph: {
     url: `${site.url}`,
