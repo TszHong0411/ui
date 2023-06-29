@@ -2,6 +2,8 @@
 
 UI library built using Radix UI and Tailwind CSS.
 
+Please check out [shadcn/ui](https://github.com/shadcn/ui). I just copy and paste the code from there and make some changes. And make it reusable for my projects.
+
 ## Installation
 
 Inside your React project directory, install the library by running either of the following commands:
