@@ -37,8 +37,8 @@ export const metadata: Metadata = {
   twitter: {
     title: site.name,
     card: 'summary_large_image',
-    site: '@codewithhong',
-    creator: '@codewithhong',
+    site: '@tszhong0411',
+    creator: '@tszhong0411',
   },
   keywords: site.keywords,
   themeColor: [
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
       color: '#000000',
     },
   ],
-  creator: 'codewithhong',
+  creator: 'tszhong0411',
   openGraph: {
     url: `${site.url}`,
     type: 'website',

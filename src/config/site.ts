@@ -16,10 +16,10 @@ export const site: Site = {
       ? 'https://ui.honghong.me'
       : 'http://localhost:3000',
   title: 'UI',
-  name: 'codewithhong',
-  keywords: ['codewithhong', 'codewithhong/ui', 'ui', 'react'],
+  name: 'tszhong0411',
+  keywords: ['tszhong0411', 'tszhong0411/ui', 'ui', 'react'],
   titleTemplate: '- UI',
-  description: 'The documentation site for codewithhong/ui.',
+  description: 'The documentation site for tszhong0411/ui.',
   favicons: [
     {
       rel: 'icon',

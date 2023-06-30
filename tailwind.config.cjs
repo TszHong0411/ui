@@ -1,4 +1,4 @@
-import { tailwindPreset } from '@codewithhong/ui'
+import { tailwindPreset } from '@tszhong0411/ui'
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {

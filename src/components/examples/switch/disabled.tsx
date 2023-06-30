@@ -1,4 +1,4 @@
-import { Label, Switch } from '@codewithhong/ui'
+import { Label, Switch } from '@tszhong0411/ui'
 
 const SwitchDisabled = () => {
   return (

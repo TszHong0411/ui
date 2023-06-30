@@ -1,15 +1,4 @@
-# @codewithhong/ui
-
-## 2.0.0
-
-### Major Changes
-
-- 06ea5aa: new package name
-
-### Patch Changes
-
-- Updated dependencies [06ea5aa]
-  - @codewithhong/utils@2.0.0
+# @tszhong0411/ui
 
 ## 1.0.7
 

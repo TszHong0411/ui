@@ -1,12 +1,12 @@
 'use client'
 
-import { cx } from '@codewithhong/utils'
 import {
   IconBrandGithub,
   IconBrandRadixUi,
   IconChevronRight,
   IconPencil,
 } from '@tabler/icons-react'
+import { cx } from '@tszhong0411/utils'
 import { motion } from 'framer-motion'
 
 type DocsHeaderProps = {

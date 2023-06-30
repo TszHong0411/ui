@@ -1,6 +1,6 @@
 'use client'
 
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@codewithhong/ui'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@tszhong0411/ui'
 import React from 'react'
 
 type ComponentExampleProps = {

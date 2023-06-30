@@ -1,3 +1,4 @@
+import { IconBrandRadixUi } from '@tabler/icons-react'
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -7,9 +8,8 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
-} from '@codewithhong/ui'
-import { cx } from '@codewithhong/utils'
-import { IconBrandRadixUi } from '@tabler/icons-react'
+} from '@tszhong0411/ui'
+import { cx } from '@tszhong0411/utils'
 import React from 'react'
 
 const NavigationMenuDemo = () => {

@@ -1,6 +1,6 @@
 'use client'
 
-import { Separator } from '@codewithhong/ui'
+import { Separator } from '@tszhong0411/ui'
 import { allDocs } from 'contentlayer/generated'
 import { notFound } from 'next/navigation'
 import { useMDXComponent } from 'next-contentlayer/hooks'

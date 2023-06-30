@@ -1,4 +1,4 @@
-import { Input } from '@codewithhong/ui'
+import { Input } from '@tszhong0411/ui'
 
 const InputDemo = () => {
   return <Input type='text' placeholder='Search' />

@@ -1,4 +1,4 @@
-import { AspectRatio } from '@codewithhong/ui'
+import { AspectRatio } from '@tszhong0411/ui'
 
 const AspectRatioMap = () => {
   return (

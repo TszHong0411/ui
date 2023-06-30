@@ -1,4 +1,4 @@
-import { cva, cx, VariantProps } from '@codewithhong/utils'
+import { cva, cx, VariantProps } from '@tszhong0411/utils'
 import React from 'react'
 
 const alertVariants = cva(

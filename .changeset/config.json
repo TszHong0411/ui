@@ -5,7 +5,7 @@
   "changelog": [
     "@changesets/cli/changelog",
     {
-      "repo": "codewithhong/ui"
+      "repo": "tszhong0411/ui"
     }
   ],
   "commit": false,

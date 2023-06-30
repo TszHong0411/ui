@@ -1,6 +1,6 @@
-import { cx } from '@codewithhong/utils'
 import * as AccordionPrimitive from '@radix-ui/react-accordion'
 import { IconChevronDown } from '@tabler/icons-react'
+import { cx } from '@tszhong0411/utils'
 import React from 'react'
 
 const Accordion = AccordionPrimitive.Root

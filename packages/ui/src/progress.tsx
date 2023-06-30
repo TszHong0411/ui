@@ -1,5 +1,5 @@
-import { cx } from '@codewithhong/utils'
 import * as ProgressPrimitive from '@radix-ui/react-progress'
+import { cx } from '@tszhong0411/utils'
 import React from 'react'
 
 const Progress = React.forwardRef<

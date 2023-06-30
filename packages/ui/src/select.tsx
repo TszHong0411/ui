@@ -1,6 +1,6 @@
-import { cx } from '@codewithhong/utils'
 import * as SelectPrimitive from '@radix-ui/react-select'
 import { IconCheck, IconChevronDown } from '@tabler/icons-react'
+import { cx } from '@tszhong0411/utils'
 import React from 'react'
 
 const Select = SelectPrimitive.Root

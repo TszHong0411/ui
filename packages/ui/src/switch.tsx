@@ -1,5 +1,5 @@
-import { cx } from '@codewithhong/utils'
 import * as SwitchPrimitive from '@radix-ui/react-switch'
+import { cx } from '@tszhong0411/utils'
 import React from 'react'
 
 const Switch = React.forwardRef<

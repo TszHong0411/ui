@@ -1,7 +1,7 @@
 'use client'
 
-import { Button, Logo } from '@codewithhong/ui'
 import { IconBrandGithub, IconMenu } from '@tabler/icons-react'
+import { Button, Logo } from '@tszhong0411/ui'
 import Link from 'next/link'
 import React from 'react'
 
@@ -38,7 +38,7 @@ const Header = () => {
             className='flex h-9 w-9 items-center justify-center p-0'
           >
             <a
-              href='https://github.com/codewithhong/ui'
+              href='https://github.com/tszhong0411/ui'
               target='_blank'
               rel='noopener noreferrer'
             >

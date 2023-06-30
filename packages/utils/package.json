@@ -1,7 +1,7 @@
 {
-  "name": "@codewithhong/utils",
+  "name": "@tszhong0411/utils",
   "version": "2.0.0",
-  "description": "The utils for CodeWithHong projects",
+  "description": "The utils for tszhong0411 projects",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -13,14 +13,14 @@
     "components",
     "typescript"
   ],
-  "author": "Lai Tsz Hong <info@honghong.me> (https://github.com/codewithhong/)",
-  "homepage": "https://github.com/codewithhong/ui#readme",
+  "author": "Lai Tsz Hong <info@honghong.me> (https://github.com/tszhong0411/)",
+  "homepage": "https://github.com/tszhong0411/ui#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/codewithhong/ui.git"
+    "url": "git+https://github.com/tszhong0411/ui.git"
   },
   "bugs": {
-    "url": "https://github.com/codewithhong/ui/issues"
+    "url": "https://github.com/tszhong0411/ui/issues"
   },
   "files": [
     "dist/**"
@@ -34,7 +34,7 @@
     "dev": "tsup src/index.ts --format esm,cjs --watch --dts"
   },
   "devDependencies": {
-    "@codewithhong/tsconfig": "2.0.0",
+    "@tszhong0411/tsconfig": "^1.0.1",
     "eslint": "^8.39.0",
     "tsup": "^6.7.0",
     "typescript": "^5.0.4"

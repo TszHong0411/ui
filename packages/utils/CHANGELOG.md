@@ -1,10 +1,4 @@
-# @codewithhong/utils
-
-## 2.0.0
-
-### Major Changes
-
-- 06ea5aa: new package name
+# @tszhong0411/utils
 
 ## 1.0.3
 

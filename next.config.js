@@ -6,7 +6,7 @@ const nextConfig = {
     appDir: true,
   },
 
-  transpilePackages: ['@codewithhong/ui'],
+  transpilePackages: ['@tszhong0411/ui'],
 
   images: {
     domains: ['images.unsplash.com'],

@@ -1,10 +1,10 @@
+import { IconSelector } from '@tabler/icons-react'
 import {
   Button,
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
-} from '@codewithhong/ui'
-import { IconSelector } from '@tabler/icons-react'
+} from '@tszhong0411/ui'
 import React from 'react'
 
 const CollapsibleDemo = () => {

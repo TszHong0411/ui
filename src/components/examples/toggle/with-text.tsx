@@ -1,5 +1,5 @@
-import { Toggle } from '@codewithhong/ui'
 import { IconBold } from '@tabler/icons-react'
+import { Toggle } from '@tszhong0411/ui'
 
 const ToggleWithText = () => {
   return (

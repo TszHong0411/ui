@@ -1,5 +1,6 @@
 'use client'
 
+import { IconCircle, IconFile, IconMoon, IconSun } from '@tabler/icons-react'
 import {
   Button,
   CommandDialog,
@@ -10,8 +11,7 @@ import {
   CommandList,
   CommandSeparator,
   Kbd,
-} from '@codewithhong/ui'
-import { IconCircle, IconFile, IconMoon, IconSun } from '@tabler/icons-react'
+} from '@tszhong0411/ui'
 import { useRouter } from 'next/navigation'
 import { useTheme } from 'next-themes'
 import React from 'react'

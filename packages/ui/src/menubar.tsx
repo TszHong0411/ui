@@ -1,10 +1,10 @@
-import { cx } from '@codewithhong/utils'
 import * as MenubarPrimitive from '@radix-ui/react-menubar'
 import {
   IconCheck,
   IconChevronRight,
   IconPointFilled,
 } from '@tabler/icons-react'
+import { cx } from '@tszhong0411/utils'
 import React from 'react'
 
 const MenubarMenu = MenubarPrimitive.Menu

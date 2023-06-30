@@ -1,6 +1,6 @@
-import { cx } from '@codewithhong/utils'
 import * as DialogPrimitive from '@radix-ui/react-dialog'
 import { IconX } from '@tabler/icons-react'
+import { cx } from '@tszhong0411/utils'
 import React from 'react'
 
 const Dialog = DialogPrimitive.Root

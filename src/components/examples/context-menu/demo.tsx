@@ -14,7 +14,7 @@ import {
   ContextMenuSubContent,
   ContextMenuSubTrigger,
   ContextMenuTrigger,
-} from '@codewithhong/ui'
+} from '@tszhong0411/ui'
 import React from 'react'
 
 const ContextMenuDemo = () => {
