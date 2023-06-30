@@ -9,6 +9,7 @@
     }
   ],
   "commit": false,
+  "fixed": [["@tszhong0411/ui", "@tszhong0411/utils"]],
   "ignore": [],
   "linked": []
 }
