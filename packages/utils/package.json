@@ -1,6 +1,6 @@
 {
   "name": "@tszhong0411/utils",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "The utils for tszhong0411 projects",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
