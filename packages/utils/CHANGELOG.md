@@ -1,5 +1,11 @@
 # @tszhong0411/utils
 
+## 3.0.0
+
+### Major Changes
+
+- 22d6de5: fixed version
+
 ## 2.0.0
 
 ### Major Changes
