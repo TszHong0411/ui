@@ -1,5 +1,11 @@
 # @tszhong0411/utils
 
+## 2.0.0
+
+### Major Changes
+
+- 43b62de: change username
+
 ## 1.0.3
 
 ### Patch Changes
