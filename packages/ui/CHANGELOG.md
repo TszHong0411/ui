@@ -1,5 +1,16 @@
 # @tszhong0411/ui
 
+## 2.0.0
+
+### Major Changes
+
+- 43b62de: change username
+
+### Patch Changes
+
+- Updated dependencies [43b62de]
+  - @tszhong0411/utils@2.0.0
+
 ## 1.0.7
 
 ### Patch Changes
