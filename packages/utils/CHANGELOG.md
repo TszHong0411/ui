@@ -1,5 +1,7 @@
 # @tszhong0411/utils
 
+## 3.0.1
+
 ## 3.0.0
 
 ### Major Changes
