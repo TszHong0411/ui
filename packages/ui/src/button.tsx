@@ -15,7 +15,7 @@ const buttonVariants = cva(
           'hover:text-accent-fg hover:bg-accent-bg',
         ],
         outline: [
-          'border-accent-2 bg-accent-bg text-accent-5',
+          'border-accent-2 bg-accent-bg text-accent-8',
           'hover:text-accent-fg hover:border-accent-fg',
         ],
         danger: [
